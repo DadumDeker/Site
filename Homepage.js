@@ -6,7 +6,6 @@ const songs = [
     {title: 'Texas Hold'em - Beyonce', src: 'https://ia903401.us.archive.org/10/items/2020s/218.BEYONCE%20-%20Texas%20Holdem.mp3'}
     {title: 'Be Quiet and Drive - Deftones', src: 'https://archive.org/download/3131BEQUIETAndDRIVE/02 Digital Bath.mp3'}
     {title: 'Dagger - Slowdive', src: 'https://soundcloud.com/vboysstockholm/punk-rock-loser'}
-    
 ];
 
 const player = document.getElementById('music-player');
