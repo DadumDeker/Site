@@ -1,12 +1,19 @@
+It appears that the provided JavaScript code is for a music player application. The code defines an array of songs with their titles and sources, and provides functions to shuffle the songs, play the next song, and toggle play/pause.
+
+Here is a revised version of the code with some improvements and additional comments for clarity:
+
+
+// Array of songs with title and source
 const songs = [
-__{_title:_'Olsen_Olsen_-_Sigur_Ros',_src:_'https://t4.bcbits.com/stream/f9c8cdcca0d4b6ccc9b892b0cc7b3f0b/mp3-128/1476455887?p=0&ts=1723899607&t=accc30242ac5d517baa1f38cdbce4d52debb7f33&token=1723899607_577b55ab4942f1b6e8587f01a4c9566ee26f2db4'_},
-__{_title:_'Jalouse_-_Ecco2k',_src:_'https://archive.org/download/pxe_20220407/2021%20-%20Ecco2K%20-%20PXE/03.%20Jalouse.mp3'_},
-__{_title:_'Father_Stretch_My_Hands_Pt_1_&_2_-_Kanye_West',_src:_'https://archive.org/download/father-stretch-my-hands-pt-1-2/Father%20Stretch%20My%20Hands%20Pt%201%20%26%202.mp3'_},
-__{_title:_'Power_-_Young_Thug',_src:_'https://archive.org/download/YoungThug_201802/Young%20-%20Thug%20memo.mp3'_},
-__{_title:_'Be_Quiet_and_Drive_-_Deftones',_src:_'https://archive.org/download/3131BEQUIETAndDRIVE/02%20Digital%20Bath.mp3'_},
-__{_title:_'Dagger_-_Slowdive',_src:_'https://soundcloud.com/vboysstockholm/punk-rock-loser'_},
+__{_title:_'Olsen_Olsen_-_Sigur_Ros',__src:_'https://t4.bcbits.com/stream/f9c8cdcca0d4b6ccc9b892b0cc7b3f0b/mp3-128/1476455887?p=0&ts=1723899607&t=accc30242ac5d517baa1f38cdbce4d52debb7f33&token=1723899607_577b55ab4942f1b6e8587f01a4c9566ee26f2db4'},
+__{_title:_'Jalouse_-_Ecco2k',__src:_'https://archive.org/download/pxe_20220407/2021%20-%20Ecco2K%20-%20PXE/03.%20Jalouse.mp3'},
+__{_title:_'Father_Stretch_My_Hands_Pt_1_&_2_-_Kanye_West',__src:_'https://archive.org/download/father-stretch-my-hands-pt-1-2/Father%20Stretch%20My%20Hands%20Pt%201%20%26%202.mp3'},
+__{_title:_'Power_-_Young_Thug',__src:_'https://archive.org/download/YoungThug_201802/Young%20-%20Thug%20memo.mp3'},
+__{_title:_'Be_Quiet_and_Drive_-_Deftones',__src:_'https://archive.org/download/3131BEQUIETAndDRIVE/02%20Digital%20Bath.mp3'},
+__{_title:_'Dagger_-_Slowdive',__src:_'https://soundcloud.com/vboysstockholm/punk-rock-loser'},
 ];
 
+// Initialize variables
 let isPlaying = false;
 let songQueue = [];
 let currentSongIndex = -1;
@@ -14,8 +21,8 @@ let currentSongIndex = -1;
 // Function to format time as mm:ss
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
-  return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+  const remainingSeconds = Math.floor(seconds % 60);
+  return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
 }
 
 // Function to update time displays
@@ -44,8 +51,8 @@ function playNextSong() {
 
   currentSongIndex = (currentSongIndex + 1) % songQueue.length;
   const nextSong = songQueue[currentSongIndex];
-  trackTitleElement.textContent = nextSong.title;
-  player.src = nextSong.src;
+  trackTitleElement.textContent = nextSong._title;
+  player.src = nextSong._src;
   player.load();
   player.play();
   isPlaying = true;
@@ -63,6 +70,7 @@ function togglePlayPause() {
   }
   isPlaying = !isPlaying;
 }
+
 
 // Set up player and start with a shuffled song list
 window.onload = function() {
