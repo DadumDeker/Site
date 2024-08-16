@@ -1,11 +1,11 @@
 // Array of songs with title and source
 const songs = [
-  { title: 'Olsen_Olsen_-_Sigur_Ros', src: 'https://t4.bcbits.com/stream/f9c8cdcca0d4b6ccc9b892b0cc7b3f0b/mp3-128/1476455887?p=0&ts=1723899607&t=accc30242ac5d517baa1f38cdbce4d52debb7f33&token=1723899607_577b55ab4942f1b6e8587f01a4c9566ee26f2db4' },
-  { title: 'Jalouse_-_Ecco2k', src: 'https://archive.org/download/pxe_20220407/2021%20-%20Ecco2K%20-%20PXE/03.%20Jalouse.mp3' },
-  { title: 'Father_Stretch_My_Hands_Pt_1_&_2_-_Kanye_West', src: 'https://archive.org/download/father-stretch-my-hands-pt-1-2/Father%20Stretch%20My%20Hands%20Pt%201%20%26%202.mp3' },
-  { title: 'Power_-_Young_Thug', src: 'https://archive.org/download/YoungThug_201802/Young%20-%20Thug%20memo.mp3' },
-  { title: 'Be_Quiet_and_Drive_-_Deftones', src: 'https://archive.org/download/3131BEQUIETAndDRIVE/02%20Digital%20Bath.mp3' },
-  { title: 'Dagger_-_Slowdive', src: 'https://archive.org/download/slowdive1/Slowdive/10%20Slowdive%20-%20Dagger.mp3' },
+  { title: 'Olsen Olsen - Sigur Ros', src: 'https://t4.bcbits.com/stream/f9c8cdcca0d4b6ccc9b892b0cc7b3f0b/mp3-128/1476455887?p=0&ts=1723899607&t=accc30242ac5d517baa1f38cdbce4d52debb7f33&token=1723899607_577b55ab4942f1b6e8587f01a4c9566ee26f2db4' },
+  { title: 'Jalouse - Ecco2k', src: 'https://archive.org/download/pxe_20220407/2021%20-%20Ecco2K%20-%20PXE/03.%20Jalouse.mp3' },
+  { title: 'Father Stretch My Hands Pt 1 & 2 - Kanye West', src: 'https://archive.org/download/father-stretch-my-hands-pt-1-2/Father%20Stretch%20My%20Hands%20Pt%201%20%26%202.mp3' },
+  { title: 'Power - Young Thug', src: 'https://archive.org/download/YoungThug_201802/Young%20-%20Thug%20memo.mp3' },
+  { title: 'Be Quiet and Drive - Deftones', src: 'https://archive.org/download/3131BEQUIETAndDRIVE/02%20Digital%20Bath.mp3' },
+  { title: 'Dagger - Slowdive', src: 'https://archive.org/download/slowdive1/Slowdive/10%20Slowdive%20-%20Dagger.mp3' },
 ];
 
 // Initialize variables
