@@ -1,0 +1,103 @@
+/* Global Styles */
+body {
+    color: #fff;
+    background: url(https://i.pinimg.com/originals/1b/ce/73/1bce739be7729a5f201960708ded8163.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 45px;
+    font-size: 15px;
+}
+
+#profile {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
+}
+
+#profile img {
+    border-radius: 50%; /* Round profile image */
+}
+
+/* Music Player Styles */
+#player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+#player-controls span {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.pause-button, .skip-button {
+    padding: 10px 20px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pause-button:hover, .skip-button:hover {
+    background-color: #ff4da6;
+}
+
+audio {
+    display: none; /* Hide the default audio controls */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #fff;
+}
+/* Global Styles for Buttons */
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Connect Button */
+.connect-button {
+    background: linear-gradient(145deg, #f9a1b2, #f4a6c4); /* Pastel pink gradient */
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3); /* Soft shadow */
+}
+
+.connect-button:hover {
+    background: linear-gradient(145deg, #f4a6c4, #f9a1b2);
+    transform: scale(1.05);
+}
+
+/* Chat Button */
+.chat-button {
+    background: linear-gradient(145deg, #a4d8e0, #c9f7f4); /* Soft mint green gradient */
+    box-shadow: 0 5px 15px rgba(160, 224, 236, 0.3); /* Soft shadow */
+}
+
+.chat-button:hover {
+    background: linear-gradient(145deg, #c9f7f4, #a4d8e0);
+    transform: scale(1.05);
+}
