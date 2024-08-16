@@ -5,7 +5,7 @@ const songs = [
   { title: 'Father_Stretch_My_Hands_Pt_1_&_2_-_Kanye_West', src: 'https://archive.org/download/father-stretch-my-hands-pt-1-2/Father%20Stretch%20My%20Hands%20Pt%201%20%26%202.mp3' },
   { title: 'Power_-_Young_Thug', src: 'https://archive.org/download/YoungThug_201802/Young%20-%20Thug%20memo.mp3' },
   { title: 'Be_Quiet_and_Drive_-_Deftones', src: 'https://archive.org/download/3131BEQUIETAndDRIVE/02%20Digital%20Bath.mp3' },
-  { title: 'Dagger_-_Slowdive', src: 'https://soundcloud.com/vboysstockholm/punk-rock-loser' },
+  { title: 'Dagger_-_Slowdive', src: 'https://archive.org/download/slowdive1/Slowdive/10%20Slowdive%20-%20Dagger.mp3' },
 ];
 
 // Initialize variables
