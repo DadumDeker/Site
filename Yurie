@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add Song</title>
+</head>
+<body>
+    <h1>Add a New Song</h1>
+    
+    <form id="song-form">
+        <label for="title">Song Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="src">MP3 URL:</label><br>
+        <input type="url" id="src" name="src" required><br><br>
+        
+        <button type="submit">Add Song</button>
+    </form>
+    
+    <script>
+        // Listen for form submission
+        document.getElementById('song-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            const title = document.getElementById('title').value;
+            const src = document.getElementById('src').value;
+
+            // Send AJAX request to add the song
+            fetch('/add-song', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ title: title, src: src })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Song added successfully!');
+                } else {
+                    alert('Failed to add song.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
